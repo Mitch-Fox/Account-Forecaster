@@ -1,0 +1,5 @@
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.csprojAssemblyReference.cache
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account_Forecaster.MainForm.resources
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account_Forecaster.Properties.Resources.resources
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.csproj.GenerateResource.cache
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.csproj.CoreCompileInputs.cache

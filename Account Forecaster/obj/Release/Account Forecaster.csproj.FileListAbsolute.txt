@@ -1,0 +1,14 @@
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Release\Account Forecaster.exe.config
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Release\Account Forecaster.exe
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Release\Account Forecaster.pdb
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Release\NodaTime.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Release\NodaTime.pdb
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Release\NodaTime.xml
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account Forecaster.csprojAssemblyReference.cache
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account_Forecaster.MainForm.resources
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account_Forecaster.Properties.Resources.resources
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account Forecaster.csproj.GenerateResource.cache
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account Forecaster.csproj.CoreCompileInputs.cache
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account Forecaster.csproj.CopyComplete
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account Forecaster.exe
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Release\Account Forecaster.pdb
