@@ -16,11 +16,11 @@ namespace Account_Forecaster
         [STAThread]
         static void Main()
         {
-            SQLiteConnection sqlite_conn;
-            sqlite_conn = SQLiteHelper.CreateConnection();
-            SQLiteHelper.CreateTable(sqlite_conn);
-            SQLiteHelper.InsertData(sqlite_conn);
-            SQLiteHelper.ReadData(sqlite_conn);
+            //SQLiteConnection sqlite_conn;
+            //sqlite_conn = SQLiteHelper.CreateConnection();
+            //SQLiteHelper.CreateMainDataTable(sqlite_conn);
+            //SQLiteHelper.InsertData(sqlite_conn);
+            //SQLiteHelper.ReadData(sqlite_conn);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Account_Forecaster
 {
@@ -17,7 +18,9 @@ namespace Account_Forecaster
     {
         private List<AccountingRowItem> AccountingRowItems = new List<AccountingRowItem>();
         private List<EndOfDayTotal> EndOfDayTotals = new List<EndOfDayTotal>();
-        private const int NumberOfDaysToCalculateAhead = 365;
+        private int DefaultNumberOfDaysToCalculate = 30;
+
+        private TimeSpan NumberOfDaysToCalculate => dtpChartEndDate.Value - dtpChartStartDate.Value;
 
         public MainForm()
         {
@@ -26,11 +29,13 @@ namespace Account_Forecaster
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            dtpChartStartDate.MinDate = DateTime.Now;
-            dtpChartStartDate.MaxDate = DateTime.Now.AddDays(NumberOfDaysToCalculateAhead);
+            var startDate = DateTime.Now;
+            dtpChartStartDate.MinDate = startDate;
+            dtpChartStartDate.Value = startDate;
 
-            dtpChartEndDate.MinDate = DateTime.Now;
-            dtpChartEndDate.MaxDate = DateTime.Now.AddDays(NumberOfDaysToCalculateAhead);
+            var endDate = startDate.AddDays(DefaultNumberOfDaysToCalculate);
+            dtpChartEndDate.MinDate = endDate;
+            dtpChartEndDate.Value = endDate;
 
             cboFrequency.Items.AddRange(Frequency.AllFrequencies.ToArray());
 
@@ -70,10 +75,7 @@ namespace Account_Forecaster
         {
             MainChart.Series.Clear();
 
-            System.Windows.Forms.DataVisualization.Charting.Series series = new System.Windows.Forms.DataVisualization.Charting.Series
-            {
-                ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-            };
+            Series series = new Series { ChartType = SeriesChartType.Line };
 
             foreach (EndOfDayTotal endOfDayTotal in EndOfDayTotals)
             {
@@ -91,14 +93,14 @@ namespace Account_Forecaster
 
             if (decimal.TryParse(txtStartingBalance.Text, out decimal StartingBalance))
             {
-                for (int i = 0; i < NumberOfDaysToCalculateAhead; i++)
+                for (int i = 0; i < NumberOfDaysToCalculate.TotalDays; i++)
                 {
-                    var newEndOfDayTotalDate = DateTime.Now.AddDays(i);
+                    var nextDate = dtpChartStartDate.Value.AddDays(i);
                     bool balanceHasChanged = false;
 
                     foreach (AccountingRowItem item in AccountingRowItems)
                     {
-                        if (item.OccursOnGivenDay(newEndOfDayTotalDate))
+                        if (item.OccursOnGivenDay(nextDate))
                         {
                             if (item.IsIncome)
                             {
@@ -117,13 +119,12 @@ namespace Account_Forecaster
                     {
                         EndOfDayTotals.Add(new EndOfDayTotal()
                         {
-                            Date = newEndOfDayTotalDate,
+                            Date = nextDate,
                             Total = StartingBalance
                         });
                     }
                 }
             }
-
         }
 
         private void RefreshDGV()
@@ -132,13 +133,22 @@ namespace Account_Forecaster
             dgvAllItems.DataSource = AccountingRowItems;
         }
 
-
         private void txtStartingBalance_Leave(object sender, EventArgs e)
         {
             RefreshCharts();
         }
 
         private void txtStartingBalance_TextChanged(object sender, EventArgs e)
+        {
+            RefreshCharts();
+        }
+
+        private void dtpChartStartDate_ValueChanged(object sender, EventArgs e)
+        {
+            RefreshCharts();
+        }
+
+        private void dtpChartEndDate_ValueChanged(object sender, EventArgs e)
         {
             RefreshCharts();
         }

@@ -31,7 +31,10 @@ namespace SQLiteDemo
             try
             {
                 SQLiteCommand sqlite_cmd;
-                string Createsql = "CREATE TABLE SampleTable (Col1 VARCHAR(20), Col2 INT)";
+                string Createsql = "CREATE TABLE " +
+                    "SampleTable " +
+                    "(Description VARCHAR(20), " +
+                    "IsIncome INT)";
                 sqlite_cmd = conn.CreateCommand();
                 sqlite_cmd.CommandText = Createsql;
                 sqlite_cmd.ExecuteNonQuery();
@@ -44,6 +47,8 @@ namespace SQLiteDemo
 
         public static List<AccountingRowItem> ReadAllData(SQLiteConnection conn)
         {
+            var returnList = new List<AccountingRowItem>();
+
             SQLiteDataReader sqlite_datareader;
             SQLiteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();
@@ -54,8 +59,17 @@ namespace SQLiteDemo
             {
                 string myreader = sqlite_datareader.GetString(0);
                 Console.WriteLine(myreader);
+                var dataRowValues = sqlite_datareader.GetValues();
+                foreach (var key in dataRowValues.AllKeys)
+                {
+                    var value = dataRowValues[key];
+                    //returnList.Add(myreader);
+                }
+                
             }
             conn.Close();
+
+            return returnList;
         }
 
         public static void Insert(SQLiteConnection conn, AccountingRowItem item)

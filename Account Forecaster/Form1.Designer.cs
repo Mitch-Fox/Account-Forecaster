@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DataTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -231,7 +231,7 @@
             // 
             this.cboCostType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cboCostType.FormattingEnabled = true;
-            this.cboCostType.Location = new System.Drawing.Point(149, 169);
+            this.cboCostType.Location = new System.Drawing.Point(149, 171);
             this.cboCostType.Name = "cboCostType";
             this.cboCostType.Size = new System.Drawing.Size(169, 24);
             this.cboCostType.TabIndex = 9;
@@ -250,7 +250,7 @@
             // 
             this.cboSubCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cboSubCategory.FormattingEnabled = true;
-            this.cboSubCategory.Location = new System.Drawing.Point(149, 136);
+            this.cboSubCategory.Location = new System.Drawing.Point(149, 138);
             this.cboSubCategory.Name = "cboSubCategory";
             this.cboSubCategory.Size = new System.Drawing.Size(169, 24);
             this.cboSubCategory.TabIndex = 13;
@@ -269,7 +269,7 @@
             // 
             this.cboMainCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cboMainCategory.FormattingEnabled = true;
-            this.cboMainCategory.Location = new System.Drawing.Point(149, 103);
+            this.cboMainCategory.Location = new System.Drawing.Point(149, 105);
             this.cboMainCategory.Name = "cboMainCategory";
             this.cboMainCategory.Size = new System.Drawing.Size(169, 24);
             this.cboMainCategory.TabIndex = 8;
@@ -298,7 +298,7 @@
             // 
             this.cboFrequency.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cboFrequency.FormattingEnabled = true;
-            this.cboFrequency.Location = new System.Drawing.Point(149, 70);
+            this.cboFrequency.Location = new System.Drawing.Point(149, 72);
             this.cboFrequency.Name = "cboFrequency";
             this.cboFrequency.Size = new System.Drawing.Size(169, 24);
             this.cboFrequency.TabIndex = 7;
@@ -328,7 +328,7 @@
             this.cboIncomeOrExpense.Items.AddRange(new object[] {
             "Income",
             "Expense"});
-            this.cboIncomeOrExpense.Location = new System.Drawing.Point(149, 39);
+            this.cboIncomeOrExpense.Location = new System.Drawing.Point(149, 37);
             this.cboIncomeOrExpense.Name = "cboIncomeOrExpense";
             this.cboIncomeOrExpense.Size = new System.Drawing.Size(169, 24);
             this.cboIncomeOrExpense.TabIndex = 17;
@@ -400,11 +400,11 @@
             this.MainChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.MainChart.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.MainChart.ChartAreas.Add(chartArea2);
             this.tableLayoutPanel2.SetColumnSpan(this.MainChart, 8);
-            legend1.Name = "Legend1";
-            this.MainChart.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.MainChart.Legends.Add(legend2);
             this.MainChart.Location = new System.Drawing.Point(3, 32);
             this.MainChart.Name = "MainChart";
             this.MainChart.Size = new System.Drawing.Size(777, 396);
@@ -439,6 +439,7 @@
             this.dtpChartStartDate.Name = "dtpChartStartDate";
             this.dtpChartStartDate.Size = new System.Drawing.Size(105, 23);
             this.dtpChartStartDate.TabIndex = 3;
+            this.dtpChartStartDate.ValueChanged += new System.EventHandler(this.dtpChartStartDate_ValueChanged);
             // 
             // dtpChartEndDate
             // 
@@ -448,6 +449,7 @@
             this.dtpChartEndDate.Name = "dtpChartEndDate";
             this.dtpChartEndDate.Size = new System.Drawing.Size(116, 23);
             this.dtpChartEndDate.TabIndex = 4;
+            this.dtpChartEndDate.ValueChanged += new System.EventHandler(this.dtpChartEndDate_ValueChanged);
             // 
             // label8
             // 

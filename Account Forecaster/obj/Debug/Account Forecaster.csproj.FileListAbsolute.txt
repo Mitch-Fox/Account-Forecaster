@@ -1,5 +1,24 @@
-C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.csprojAssemblyReference.cache
 C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account_Forecaster.MainForm.resources
 C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account_Forecaster.Properties.Resources.resources
 C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.csproj.GenerateResource.cache
 C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.csproj.CoreCompileInputs.cache
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\Account Forecaster.exe.config
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\Account Forecaster.exe
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\Account Forecaster.pdb
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\EntityFramework.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\NodaTime.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\System.Data.SQLite.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\EntityFramework.xml
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\NodaTime.pdb
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\NodaTime.xml
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\System.Data.SQLite.xml
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.csproj.CopyComplete
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.exe
+C:\Users\pmitc\source\repos\Account Forecaster\Account Forecaster\obj\Debug\Account Forecaster.pdb
